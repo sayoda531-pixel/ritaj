@@ -8,6 +8,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- TikTok Pixel Code Start -->
+    <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+      ttq.load('DB9V693C77U6POU9AVV0');
+      ttq.page();
+    }(window, document, 'ttq');
+    </script>
+    <!-- TikTok Pixel Code End -->
+
     <style>
         body {
             font-family: 'Cairo', sans-serif;
@@ -26,6 +41,7 @@
             <div>
                 <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20وصيانة%20الأفران" 
                    target="_blank" 
+                   onclick="ttq.track('ClickButton');"
                    class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition flex items-center gap-2">
                     <i class="fa-brands fa-whatsapp text-lg"></i> اطلبنا واتساب
                 </a>
@@ -40,11 +56,12 @@
                 أفضل شركة تنظيف وصيانة أفران بالرياض
             </h1>
             <p class="text-lg md:text-xl text-blue-100 mb-8">
-                نric غسيل وتنظيف شامل للأفران المنزلية والمطاعم مع الصيانة وإصلاح الأعطال بأيدي فنيين متخصصين وبأفضل الأسعار.
+                نقدم غسيل وتنظيف شامل للأفران المنزلية والمطاعم مع الصيانة وإصلاح الأعطال بأيدي فنيين متخصصين وبأفضل الأسعار.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20وصيانة%20الأفران" 
                    target="_blank"
+                   onclick="ttq.track('ClickButton');"
                    class="bg-green-500 hover:bg-green-600 text-white px-8 py-3.5 rounded-xl font-bold text-lg shadow-lg transition flex items-center justify-center gap-3">
                     <i class="fa-brands fa-whatsapp text-2xl"></i> احجز خدمتك الآن عبر الواتساب
                 </a>
@@ -119,6 +136,7 @@
     <!-- زر واتساب عائم ثابت في الشاشة -->
     <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20وصيانة%20الأفران" 
        target="_blank"
+       onclick="ttq.track('ClickButton');"
        class="fixed bottom-6 left-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-xl hover:bg-green-600 transition z-50">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
