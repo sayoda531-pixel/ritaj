@@ -1,153 +1,290 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة الأمل لتنظيف وصيانة الأفران بالرياض</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    
-    <!-- TikTok Pixel Code Start -->
-    <script>
-    !function (w, d, t) {
-      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة الإخلاص لعزل الخزانات والأسطح بالرياض</title>
+  <meta name="description" content="شركة الإخلاص لعزل الخزانات والأسطح بالرياض. اطلب خدمة العزل وتواصل معنا عبر واتساب أو الاتصال المباشر على 0562265943.">
+  <meta name="theme-color" content="#073568">
 
-
-      ttq.load('DB9V693C77U6POU9AVV0');
-      ttq.page();
-    }(window, document, 'ttq');
-    </script>
-    <!-- TikTok Pixel Code End -->
-
-    <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-        }
-    </style>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: #16324f;
+      background: #fff;
+      line-height: 1.9;
+    }
+    a { text-decoration: none; }
+    .container { width: min(1120px, 92%); margin: auto; }
+    header {
+      background: #fff;
+      box-shadow: 0 2px 15px #082d5010;
+      padding: 14px 0;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand { color: #073568; font-weight: 900; font-size: 21px; }
+    .brand span { display: block; color: #e5a900; font-size: 13px; }
+    .nav-note { font-size: 13px; color: #52677d; }
+    .hero {
+      background: linear-gradient(120deg, #052d55, #0c568a);
+      color: #fff;
+      padding: 64px 0;
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 35px;
+    }
+    .tag {
+      display: inline-block;
+      background: #ffffff18;
+      border: 1px solid #ffffff40;
+      border-radius: 30px;
+      padding: 5px 14px;
+      color: #ffda58;
+      font-size: 14px;
+    }
+    h1 { font-size: clamp(30px, 4.5vw, 48px); line-height: 1.45; margin: 17px 0; }
+    h1 span, .highlight { color: #ffcb35; }
+    .hero p { color: #e5eff9; font-size: 17px; margin-bottom: 24px; }
+    .hero-image {
+      width: 100%;
+      height: 355px;
+      object-fit: cover;
+      border-radius: 22px;
+      border: 3px solid #ffffff25;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 54px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 16px;
+      transition: transform .2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .whatsapp { background: #16a34a; color: #fff; }
+    .call { background: #ffcb35; color: #102d4b; }
+    .features { background: #f2f7fc; padding: 27px 0; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+    .feature {
+      background: #fff;
+      padding: 18px;
+      border-radius: 14px;
+      text-align: center;
+      border: 1px solid #e4edf6;
+    }
+    .feature strong { display: block; color: #073568; font-size: 17px; }
+    section { padding: 56px 0; }
+    .section-title { text-align: center; margin: 0 0 12px; color: #073568; font-size: 30px; }
+    .section-subtitle {
+      text-align: center;
+      color: #63768a;
+      margin: 0 auto 32px;
+      max-width: 650px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .service-card {
+      border: 1px solid #e0eaf4;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 8px 24px #092f5010;
+    }
+    .service-card img { width: 100%; height: 230px; object-fit: cover; display: block; }
+    .service-content { padding: 22px; }
+    .service-content h3 { margin: 0 0 10px; color: #073568; font-size: 23px; }
+    .service-content p { margin: 0; color: #52677d; }
+    .checks { list-style: none; padding: 0; margin: 16px 0 0; }
+    .checks li { margin: 7px 0; }
+    .checks li::before { content: "✓"; color: #16984b; font-weight: 900; margin-left: 9px; }
+    .why { background: #f2f7fc; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 28px;
+    }
+    .why-card {
+      text-align: center;
+      padding: 22px 12px;
+      border-radius: 14px;
+      background: white;
+    }
+    .why-card .icon { font-size: 30px; }
+    .why-card h3 { font-size: 16px; color: #073568; margin: 8px 0; }
+    .why-card p { font-size: 13px; color: #61758a; margin: 0; }
+    .cta {
+      background: linear-gradient(120deg, #052d55, #0c568a);
+      color: white;
+      text-align: center;
+      padding: 48px 0;
+    }
+    .cta h2 { font-size: 29px; margin: 0 0 10px; }
+    .cta p { color: #e3eef9; margin: 0; }
+    .cta .actions { justify-content: center; }
+    .footer { background: #041f3b; color: #dce8f5; text-align: center; padding: 24px 0; }
+    .footer strong { color: #ffcb35; }
+    @media (max-width: 760px) {
+      .hero { padding: 40px 0; }
+      .hero-grid { grid-template-columns: 1fr; gap: 25px; }
+      .hero-image { height: 250px; }
+      .nav-note { display: none; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .services { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .btn { width: 100%; }
+      .actions { flex-direction: column; }
+      .section-title { font-size: 26px; }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-    <!-- شريط علوي بسيط -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2 space-x-reverse">
-                <span class="bg-blue-600 text-white p-2 rounded-lg font-bold text-xl"><i class="fa-solid fa-fire-burner"></i></span>
-                <span class="text-xl font-bold text-blue-900">الأمل للأفران</span>
-            </div>
-            <div>
-                <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20وصيانة%20الأفران" 
-                   target="_blank" 
-                   onclick="ttq.track('ClickButton');"
-                   class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i> اطلبنا واتساب
-                </a>
-            </div>
-        </div>
-    </header>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        شركة الإخلاص
+        <span>لعزل الخزانات والأسطح بالرياض</span>
+      </div>
+      <div class="nav-note">حلول عزل لحماية منزلك ومنشأتك</div>
+    </div>
+  </header>
 
-    <!-- قسم البطل (Hero Section) -->
-    <section class="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-16 px-4 text-center">
-        <div class="container mx-auto max-w-3xl">
-            <h1 class="text-3xl md:text-5xl font-black mb-6 leading-tight">
-                أفضل شركة تنظيف وصيانة أفران بالرياض
-            </h1>
-            <p class="text-lg md:text-xl text-blue-100 mb-8">
-                نقدم غسيل وتنظيف شامل للأفران المنزلية والمطاعم مع الصيانة وإصلاح الأعطال بأيدي فنيين متخصصين وبأفضل الأسعار.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20وصيانة%20الأفران" 
-                   target="_blank"
-                   onclick="ttq.track('ClickButton');"
-                   class="bg-green-500 hover:bg-green-600 text-white px-8 py-3.5 rounded-xl font-bold text-lg shadow-lg transition flex items-center justify-center gap-3">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i> احجز خدمتك الآن عبر الواتساب
-                </a>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="tag">خدمات العزل في الرياض</span>
+          <h1>احمِ منزلك مع <span>شركة الإخلاص</span> لعزل الخزانات والأسطح</h1>
+          <p>
+            هل تبحث عن حل لمشكلات تسرب المياه أو تحتاج إلى عزل سطح منزلك؟
+            تواصل معنا لمعرفة الخدمة المناسبة لاحتياجاتك وطلب المعاينة.
+          </p>
+          <div class="actions">
+            <a class="btn whatsapp" href="https://wa.me/966562265943?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B9%D8%B2%D9%84%20%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D8%AD%20%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%8C%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D8%AA%D9%83%D9%84%D9%81%D8%A9%20%D9%88%D8%AA%D8%AD%D8%AF%D9%8A%D8%AF%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">💬 اطلب الخدمة عبر واتساب</a>
+            <a class="btn call" href="tel:+966562265943">📞 اتصال مباشر الآن</a>
+          </div>
         </div>
+        <div>
+          <img class="hero-image" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=85" alt="أعمال صيانة وعزل للمباني" fetchpriority="high">
+        </div>
+      </div>
     </section>
 
-    <!-- قسم الخدمات -->
-    <section class="py-16 px-4">
-        <div class="container mx-auto max-w-5xl">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">خدماتنا الرئيسية</h2>
-                <p class="text-gray-600">نقدم حلولاً متكاملة للعناية بفرنك ليعمل بكفاءة عالية وكأنها جديدة</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- خدمة 1 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                        <i class="fa-solid fa-pump-soap"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-gray-800">تنظيف وإزالة الدهون</h3>
-                    <p class="text-gray-600 text-sm">إزالة الدهون المستعصية والشحوم المتراكمة وإعادة اللمعان لفرنك بكل احترافية.</p>
-                </div>
+    <div class="features">
+      <div class="container feature-grid">
+        <div class="feature"><strong>💧 عزل الخزانات</strong> للمساعدة في حماية الخزانات من التسرب</div>
+        <div class="feature"><strong>🏠 عزل الأسطح</strong> حلول مناسبة لحماية الأسطح</div>
+        <div class="feature"><strong>📍 خدمة بالرياض</strong> تواصل لتحديد احتياجك وموعد الخدمة</div>
+      </div>
+    </div>
 
-                <!-- خدمة 2 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-gray-800">صيانة وإصلاح الأعطال</h3>
-                    <p class="text-gray-600 text-sm">فحص وإصلاح أعطال الشعلات، الحرارة، والأجزاء الكهربائية بأيدي خبراء.</p>
-                </div>
+    <section>
+      <div class="container">
+        <h2 class="section-title">خدمات شركة الإخلاص</h2>
+        <p class="section-subtitle">نساعدك في اختيار خدمة العزل المناسبة حسب حالة الموقع وطبيعة المشكلة.</p>
 
-                <!-- خدمة 3 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-gray-800">قطع غيار أصلية</h3>
-                    <p class="text-gray-600 text-sm">نوفر قطع غيار أصلية ومضمونة لضمان عمل الأفران بأعلى كفاءة ممكنة.</p>
-                </div>
+        <div class="services">
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=80" alt="خزان مياه" loading="lazy">
+            <div class="service-content">
+              <h3>عزل خزانات المياه</h3>
+              <p>خدمة عزل للخزانات للمساعدة في الحد من التسرب وحماية الخزان وفقًا لنوعه وحالته.</p>
+              <ul class="checks">
+                <li>تقييم حالة الخزان</li>
+                <li>اختيار مادة العزل الملائمة</li>
+                <li>حلول للخزانات حسب طبيعة الاستخدام</li>
+              </ul>
             </div>
+          </article>
+
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1635424710928-6f0f4b4b6b7c?auto=format&fit=crop&w=900&q=80" alt="سطح مبنى" loading="lazy">
+            <div class="service-content">
+              <h3>عزل الأسطح</h3>
+              <p>حلول لعزل الأسطح والمساعدة في حماية المباني من تسرب المياه والعوامل الجوية.</p>
+              <ul class="checks">
+                <li>فحص السطح قبل تحديد طريقة العزل</li>
+                <li>حلول تناسب حالة السطح</li>
+                <li>تحديد تفاصيل التنفيذ بعد المعاينة</li>
+              </ul>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- لماذا نحن -->
-    <section class="bg-blue-50 py-12 px-4">
-        <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">لماذا تختار شركة الأمل؟</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="bg-white p-4 rounded-xl shadow-xs">
-                    <span class="block text-2xl font-black text-blue-600 mb-1">سرعة</span>
-                    <span class="text-sm text-gray-600">استجابة سريعة</span>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-xs">
-                    <span class="block text-2xl font-black text-blue-600 mb-1">جودة</span>
-                    <span class="text-sm text-gray-600">خدمة عالية الدقة</span>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-xs">
-                    <span class="block text-2xl font-black text-blue-600 mb-1">خبرة</span>
-                    <span class="text-sm text-gray-600">فريق متخصص</span>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-xs">
-                    <span class="block text-2xl font-black text-blue-600 mb-1">أسعار</span>
-                    <span class="text-sm text-gray-600">تنافسية ومناسبة</span>
-                </div>
-            </div>
+    <section class="why">
+      <div class="container">
+        <h2 class="section-title">لماذا تتواصل مع شركة الإخلاص؟</h2>
+        <p class="section-subtitle">نوضح لك تفاصيل الخدمة والتكلفة المتوقعة قبل الاتفاق على التنفيذ.</p>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="icon">🔍</div>
+            <h3>تحديد الاحتياج</h3>
+            <p>معرفة طبيعة المشكلة قبل اختيار الحل.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">🛠️</div>
+            <h3>حل مناسب</h3>
+            <p>اختيار طريقة العزل بحسب حالة الموقع.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">💰</div>
+            <h3>معرفة التكلفة</h3>
+            <p>تواصل للاستفسار عن السعر والتفاصيل.</p>
+          </div>
+          <div class="why-card">
+            <div class="icon">📱</div>
+            <h3>تواصل سهل</h3>
+            <p>اطلب الخدمة عبر الواتساب أو الهاتف.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- زر واتساب عائم ثابت في الشاشة -->
-    <a href="https://wa.me/966575799170?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20وصيانة%20الأفران" 
-       target="_blank"
-       onclick="ttq.track('ClickButton');"
-       class="fixed bottom-6 left-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-xl hover:bg-green-600 transition z-50">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- الفوتر -->
-    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
-        <div class="container mx-auto">
-            <p class="mb-2 font-bold text-white">شركة الأمل لتنظيف وصيانة الأفران بالرياض</p>
-            <p>جميع الحقوق محفوظة © 2026 | خدمة عملاء متاحة على مدار الساعة</p>
+    <section class="cta">
+      <div class="container">
+        <h2>لا تترك مشكلة العزل دون حل</h2>
+        <p>تواصل مع شركة الإخلاص لعزل الخزانات والأسطح بالرياض واستفسر عن الخدمة المناسبة لك.</p>
+        <div class="actions">
+          <a class="btn whatsapp" href="https://wa.me/966562265943?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B9%D8%B2%D9%84%20%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D8%AD%20%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%8C%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D8%AA%D9%83%D9%84%D9%81%D8%A9%20%D9%88%D8%AA%D8%AD%D8%AF%D9%8A%D8%AF%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">💬 اطلب الخدمة عبر واتساب</a>
+          <a class="btn call" href="tel:+966562265943">📞 اتصل على 0562265943</a>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="container">
+      <strong>شركة الإخلاص لعزل الخزانات والأسطح بالرياض</strong>
+      <div>للاستفسار وطلب الخدمة: 0562265943</div>
+    </div>
+  </footer>
 </body>
 </html>
